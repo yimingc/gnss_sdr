@@ -35,7 +35,7 @@ function settings = initSettings()
 %--------------------------------------------------------------------------
 
 % CVS record:
-% $Id: initSettings.m,v 1.9.2.32 2007/01/29 10:22:23 dpl Exp $
+% $Id: initSettings.m,v 1.9.2.31 2006/08/18 11:41:57 dpl Exp $
 
 %% Processing settings ====================================================
 % Number of milliseconds to be processed used 36000 + any transients (see
@@ -55,7 +55,7 @@ settings.skipNumberOfBytes     = 0;
 % This is a "default" name of the data file (signal record) to be used in
 % the post-processing mode
 settings.fileName           = ...
-   '..\GNSS_signal_records\GPSdata-DiscreteComponents-fs38_192-if9_55.bin';
+   '/tmp/GPSdata-DiscreteComponents-fs38_192-if9_55.bin';
 % Data type used to store one sample
 settings.dataType           = 'int8';
 

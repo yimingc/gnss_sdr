@@ -126,7 +126,7 @@ satElev  = inf(1, settings.numberOfChannels);
 % time.  
 readyChnList = activeChnList;
 
-transmitTime = TOW;
+transmitTime = TOW
 
 %##########################################################################
 %#   Do the satellite and receiver position calculations                  #
@@ -153,6 +153,7 @@ for currMeasNr = 1:fix((settings.msToProcess - max(subFrameStart)) / ...
                                          NaN(settings.numberOfChannels, 1);
 
 %% Find pseudoranges ======================================================
+subFrameStart
     navSolutions.channel.rawP(:, currMeasNr) = calculatePseudoranges(...
             trackResults, ...
             subFrameStart + settings.navSolPeriod * (currMeasNr-1), ...
@@ -162,7 +163,6 @@ for currMeasNr = 1:fix((settings.msToProcess - max(subFrameStart)) / ...
     [satPositions, satClkCorr] = satpos(transmitTime, ...
                                         [trackResults(activeChnList).PRN], ...
                                         eph, settings);
-
 %% Find receiver position =================================================
 
     % 3D receiver position can be found only if signals from more than 3

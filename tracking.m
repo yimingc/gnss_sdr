@@ -11,8 +11,8 @@ function [trackResults, channel]= tracking(fid, channel, settings)
 %       settings        - receiver settings.
 %   Outputs:
 %       trackResults    - tracking results (structure array). Contains
-%                       in-phase prompt outputs and absolute starting 
-%                       positions of spreading codes, together with other
+%                       in-phase prompt outputs and absolute spreading
+%                       code's starting positions, together with other
 %                       observation data from the tracking loops. All are
 %                       saved every millisecond.
 
@@ -40,7 +40,7 @@ function [trackResults, channel]= tracking(fid, channel, settings)
 %--------------------------------------------------------------------------
 
 %CVS record:
-%$Id: tracking.m,v 1.14.2.32 2007/01/30 09:45:12 dpl Exp $
+%$Id: tracking.m,v 1.14.2.31 2006/08/14 11:38:22 dpl Exp $
 
 %% Initialize result structure ============================================
 
